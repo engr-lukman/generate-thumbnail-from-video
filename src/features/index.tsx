@@ -18,14 +18,19 @@ const Feature = () => {
     <div className="relative px-5 py-2">
       <div className="flex justify-center">
         <div className="w-[50vw] h-full">
-          <h2 className="flex justify-between items-center font-semibold text-yellow-300 mb-2">Select a video file</h2>
-          <div className="flex w-full h-[75vh] justify-center items-start border border-dashed border-yellow-300 text-white p-4">
+          <h2 className="flex justify-between items-center font-semibold text-black mb-2">Select a video file</h2>
+          <div className="flex w-full h-[75vh] justify-center items-start border border-dashed border-black text-white p-4">
             <div className="w-full">
-              <input type="file" accept="video/*" onChange={(e: any) => fileProcessingFn(e.target.files[0])} />
+              <input
+                type="file"
+                accept="video/*"
+                onChange={(e: any) => fileProcessingFn(e.target.files[0])}
+                className="text-black"
+              />
 
               <div className="mt-4">
                 {isProcessing && (
-                  <div className="flex justify-start items-center space-x-2 text-yellow-300">
+                  <div className="flex justify-start items-center space-x-2 text-black">
                     <Spinner className="w-6 h-6" /> <span>Processing...</span>
                   </div>
                 )}
