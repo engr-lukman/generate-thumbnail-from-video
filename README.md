@@ -1,5 +1,7 @@
 # Generate thumbnail from video.
 
+![image info](./_docs/cover-photo.png)
+
 Clone the repository and run `npm install` command in the terminal.
 
 ## `npm start`
